@@ -1,0 +1,82 @@
+body {
+  text-align:center;
+  font-family:Raleway;
+  margin:0;
+  background:linear-gradient(90deg, red, yellow, green, hsl(240, 100%, 62%));
+}
+.tlo {
+  margin:0 30px;
+  padding:0;
+}
+#title {
+  font-family:'Lobster';
+}
+#description {
+  font-size:25px;
+}
+.naglowki {
+  margin-top: 60px;
+  font-size:30px;
+}
+#dropdown{
+  font-family:'Lobster';
+  font-size: 20px;
+  height: 40px;
+  width: 250px;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+.smallik{
+  font-size:20px;
+}
+.formularz {
+  font-family:'Lobster';
+  font-size: 20px;
+  height: 20px;
+  width: 250px;
+  padding: 5px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+.labelki {
+  display:inline;
+  border:2px solid black;
+  width:20%;
+  margin: 0 10px;
+  height:20px;
+  padding:1%;
+  color:black;
+  font-weight:900;
+}
+.cechy {
+  line-height: 4;
+}
+.small {
+  font-size:15px;
+}
+
+#textarea {
+  font-family:'Lobster';
+  height: 40px;
+  width: 400px;
+  padding: 5px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+#submit {
+  background:black;
+  color:white;
+  font-family:'Lobster';
+  font-size:20px;
+  height: 40px;
+  width: 300px;
+  padding: 5px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 6px;
+}
