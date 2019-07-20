@@ -1,11 +1,12 @@
-
+<!DOCTYPE html>
 <html lang="pl">
   <head>
     <link href="https://fonts.googleapis.com/css?family=Lobster%7CRaleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/Personality-Test/style.css">
   </head>
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <div class="tlo">
+    <div class="background">
       <h1 id="title">Ekstrawertyk czy introwertyk? Test osobowości!</h1>
       <div>
         <p id="description">Zastanawiałeś się kiedykolwiek jaki masz typ osobowości? Przygotowałam dla Ciebie specjalny test w którym możesz to sprawdzić.</p>
@@ -15,7 +16,7 @@
               <label id="name-label" for="imie">Imię*</label>
             </div>
             <div>
-              <input type="text" name="imie" id="name" class="formularz" placeholder="Wprowadź imię" required>
+              <input type="text" name="imie" id="name" class="form" placeholder="Wprowadź imię" required>
             </div>
           </div>
           <div>
@@ -23,7 +24,7 @@
               <label id="email-label" for="e-mail">E-mail*</label>
             </div>
             <div>
-              <input type="email" name="e-mail" id="email" class="formularz" placeholder="Wprowadź e-mail" required>
+              <input type="email" name="e-mail" id="email" class="form" placeholder="Wprowadź e-mail" required>
             </div>
           </div>
           <div>
@@ -31,11 +32,11 @@
               <label id="number-label" for="wiek">Wiek*</label>
             </div>
             <div>
-              <input type="number" name="wiek" id="number" class="formularz" min="5" max="99" placeholder="Wprowadź swój wiek" required>
+              <input type="number" name="wiek" id="number" class="form" min="5" max="99" placeholder="Wprowadź swój wiek" required>
             </div>
           </div>
           <div>
-            <div class="naglowki">
+            <div class="headlines">
               <label>Wybierz typ osobowości jaki uważasz że masz. <br> <small class="small">* nie wpłynie to na wynik Twojego testu</small></label>
             </div>
             <div>
@@ -47,9 +48,9 @@
               </select>
             </div>
             <div>
-              <div class="naglowki">
+              <div class="headlines">
                 <label>Czy podoba Ci sie moja strona?</label><br>
-                <div class="smallik"><label for="yes" id="yes-label">Tak</label>
+                <div class="tiny"><label for="yes" id="yes-label">Tak</label>
                 <input type="radio" id="yes" value="1" name="radioGroup">
                 <label for="littleyes" id="littleyes-label">Trochę tak</label>
                 <input type="radio" id="littleyes" value="0" name="radioGroup">
@@ -57,93 +58,93 @@
                 <input type="radio" id="no" value="2" name="radioGroup"></div>
               </div>
               <div>
-                <div class="naglowki">
+                <div class="headlines">
                   <label>Wybierz wszystkie cechy które posiadasz<br><small class="small"><strong>*UWAGA: </strong>możesz wybrać maksymalnie 8 cech, jeśli wybierzesz więcej test będzie nieważny.</small></label>
                 </div>
-                <div class="cechy"><div name="checkboxGroup">
-                  <div class="labelki"><label for="sangwinik1" id="sangwinik1-label">Dar przyciagania do siebie ludzi</label>
-                  <input type="checkbox" id="sangwinik1" value="0"></div>
-                  <div class="labelki"><label for="melancholik1" id="melancholik1-label">Głęboki, skłonny do rozmyślań</label>
-                  <input type="checkbox" id="melancholik1" value="1"></div>
-                  <div class="labelki"><label for="choleryk1" id="choleryk1-label">Urodzony przywódca</label>
-                  <input type="checkbox" id="choleryk1" value="2"></div>
-                  <div class="labelki"><label for="flegmatyk1" id="flegmatyk1-label">Niewymagajacy, beztroski</label>
-                  <input type="checkbox" id="flegmatyk1" value="3"></div>
+                <div class="features"><div name="checkboxGroup">
+                  <div class="labels"><label for="sanguine1" id="sanguine1-label">Dar przyciagania do siebie ludzi</label>
+                  <input type="checkbox" id="sanguine1" value="0"></div>
+                  <div class="labels"><label for="melancholy1" id="melancholy1-label">Głęboki, skłonny do rozmyślań</label>
+                  <input type="checkbox" id="melancholy1" value="1"></div>
+                  <div class="labels"><label for="spitfire1" id="spitfire1-label">Urodzony przywódca</label>
+                  <input type="checkbox" id="spitfire1" value="2"></div>
+                  <div class="labels"><label for="phlegmatic1" id="phlegmatic1-label">Niewymagajacy, beztroski</label>
+                  <input type="checkbox" id="phlegmatic1" value="3"></div>
                 </div>
                 <div name="checkboxGroup">
-                  <div class="labelki"><label for="sangwinik2" id="sangwinik2-label">Gadatliwy, dusza towarzystwa</label>
-                  <input type="checkbox" id="sangwinik2" value="0"></div>
-                  <div class="labelki"><label for="melancholik2" id="melancholik2-label">Analityczny, sumienny</label>
-                  <input type="checkbox" id="melancholik2" value="1"></div>
-                  <div class="labelki"><label for="choleryk2" id="choleryk2-label">Dynamiczny i aktywny</label>
-                  <input type="checkbox" id="choleryk2" value="2"></div>
-                  <div class="labelki"><label for="flegmatyk2" id="flegmatyk2-label">Powściagliwy</label>
-                  <input type="checkbox" id="flegmatyk2" value="3"></div>
+                  <div class="labels"><label for="sanguine2" id="sanguine2-label">Gadatliwy, dusza towarzystwa</label>
+                  <input type="checkbox" id="sanguine2" value="0"></div>
+                  <div class="labels"><label for="melancholy2" id="melancholy2-label">Analityczny, sumienny</label>
+                  <input type="checkbox" id="melancholy2" value="1"></div>
+                  <div class="labels"><label for="spitfire2" id="spitfire2-label">Dynamiczny i aktywny</label>
+                  <input type="checkbox" id="spitfire2" value="2"></div>
+                  <div class="labels"><label for="phlegmatic2" id="phlegmatic2-label">Powściagliwy</label>
+                  <input type="checkbox" id="phlegmatic2" value="3"></div>
                 </div>
                 <div name="checkboxGroup">
-                  <div class="labelki"><label for="sangwinik3" id="sangwinik3-label">Wysokie poczucie humoru, wesoły</label>
-                  <input type="checkbox" id="sangwinik3" value="0"></div>
-                  <div class="labelki"><label for="melancholik3" id="melancholik3-label">Poważny, zdeterminowany</label>
-                  <input type="checkbox" id="melancholik3" value="1"></div>
-                  <div class="labelki"><label for="choleryk3" id="choleryk3-label">Nieodparta potrzeba zmian</label>
-                  <input type="checkbox" id="choleryk3" value="2"></div>
-                  <div class="labelki"><label for="flegmatyk3" id="flegmatyk3-label">Spokojny, chłodny, opanowany</label>
-                  <input type="checkbox" id="flegmatyk3" value="3"></div>
+                  <div class="labels"><label for="sanguine3" id="sanguine3-label">Wysokie poczucie humoru, wesoły</label>
+                  <input type="checkbox" id="sanguine3" value="0"></div>
+                  <div class="labels"><label for="melancholy3" id="melancholy3-label">Poważny, zdeterminowany</label>
+                  <input type="checkbox" id="melancholy3" value="1"></div>
+                  <div class="labels"><label for="spitfire3" id="spitfire3-label">Nieodparta potrzeba zmian</label>
+                  <input type="checkbox" id="spitfire3" value="2"></div>
+                  <div class="labels"><label for="phlegmatic3" id="phlegmatic3-label">Spokojny, chłodny, opanowany</label>
+                  <input type="checkbox" id="phlegmatic3" value="3"></div>
                 </div>
                 <div name="checkboxGroup">
-                  <div class="labelki"><label for="sangwinik4" id="sangwinik4-label">Energiczny, spontaniczny</label>
-                  <input type="checkbox" id="sangwinik4" value="0"></div>
-                  <div class="labelki"><label for="melancholik4" id="melancholik4-label">Utalentowany i twórczy</label>
-                  <input type="checkbox" id="melancholik4" value="1"></div>
-                  <div class="labelki"><label for="choleryk4" id="choleryk4-label">Silna wola i zdecydowanie</label>
-                  <input type="checkbox" id="choleryk4" value="2"></div>
-                  <div class="labelki"><label for="flegmatyk4" id="flegmatyk4-label">Cierpliwy, zrównoważony</label>
-                  <input type="checkbox" id="flegmatyk4" value="3"></div>
+                  <div class="labels"><label for="sanguine4" id="sanguine4-label">Energiczny, spontaniczny</label>
+                  <input type="checkbox" id="sanguine4" value="0"></div>
+                  <div class="labels"><label for="melancholy4" id="melancholy4-label">Utalentowany i twórczy</label>
+                  <input type="checkbox" id="melancholy4" value="1"></div>
+                  <div class="labels"><label for="spitfire4" id="spitfire4-label">Silna wola i zdecydowanie</label>
+                  <input type="checkbox" id="spitfire4" value="2"></div>
+                  <div class="labels"><label for="phlegmatic4" id="phlegmatic4-label">Cierpliwy, zrównoważony</label>
+                  <input type="checkbox" id="phlegmatic4" value="3"></div>
                 </div>
                 <div name="checkboxGroup">
-                  <div class="labelki"><label for="sangwinik5" id="sangwinik5-label">Dobra pamięć do kolorów</label>
-                  <input type="checkbox" id="sangwinik5" value="0"></div>
-                  <div class="labelki"><label for="melancholik5" id="melancholik5-label">Zdolności artystyczne, muzykalny</label>
-                  <input type="checkbox" id="melancholik5" value="1"></div>
-                  <div class="labelki"><label for="choleryk5" id="choleryk5-label">Niewzruszony</label>
-                  <input type="checkbox" id="choleryk5" value="2"></div>
-                  <div class="labelki"><label for="flegmatyk5" id="flegmatyk5-label">Cichy i dowcipny</label>
-                  <input type="checkbox" id="flegmatyk5" value="3"></div>
+                  <div class="labels"><label for="sanguine5" id="sanguine5-label">Dobra pamięć do kolorów</label>
+                  <input type="checkbox" id="sanguine5" value="0"></div>
+                  <div class="labels"><label for="melancholy5" id="melancholy5-label">Zdolności artystyczne, muzykalny</label>
+                  <input type="checkbox" id="melancholy5" value="1"></div>
+                  <div class="labels"><label for="spitfire5" id="spitfire5-label">Niewzruszony</label>
+                  <input type="checkbox" id="spitfire5" value="2"></div>
+                  <div class="labels"><label for="phlegmatic5" id="phlegmatic5-label">Cichy i dowcipny</label>
+                  <input type="checkbox" id="phlegmatic5" value="3"></div>
                 </div>
                 <div name="checkboxGroup">
-                  <div class="labelki"><label for="sangwinik6" id="sangwinik6-label">Prostoduszny, żyje dniem dzisiejszym</label>
-                  <input type="checkbox" id="sangwinik6" value="0"></div>
-                  <div class="labelki"><label for="melancholik6" id="melancholik6-label">Wyczulony na piękno</label>
-                  <input type="checkbox" id="melancholik6" value="1"></div>
-                  <div class="labelki"><label for="choleryk6" id="choleryk6-label">Trudno Cie zniechęcić</label>
-                  <input type="checkbox" id="choleryk6" value="2"></div>
-                  <div class="labelki"><label for="flegmatyk6" id="flegmatyk6-label">Życzliwy i uprzejmy</label>
-                  <input type="checkbox" id="flegmatyk6" value="3"></div>
+                  <div class="labels"><label for="sanguine6" id="sanguine6-label">Prostoduszny, żyje dniem dzisiejszym</label>
+                  <input type="checkbox" id="sanguine6" value="0"></div>
+                  <div class="labels"><label for="melancholy6" id="melancholy6-label">Wyczulony na piękno</label>
+                  <input type="checkbox" id="melancholy6" value="1"></div>
+                  <div class="labels"><label for="spitfire6" id="spitfire6-label">Trudno Cie zniechęcić</label>
+                  <input type="checkbox" id="spitfire6" value="2"></div>
+                  <div class="labels"><label for="phlegmatic6" id="phlegmatic6-label">Życzliwy i uprzejmy</label>
+                  <input type="checkbox" id="phlegmatic6" value="3"></div>
                 </div>
                 <div name="checkboxGroup">
-                  <div class="labelki"><label for="sangwinik7" id="sangwinik7-label">Zmienność usposobienia</label>
-                  <input type="checkbox" id="sangwinik7" value="0"></div>
-                  <div class="labelki"><label for="melancholik7" id="melancholik7-label">Skłonny do poświęceń</label>
-                  <input type="checkbox" id="melancholik7" value="1"></div>
-                  <div class="labelki"><label for="choleryk7" id="choleryk7-label">niezależny i samowystarczalny</label>
-                  <input type="checkbox" id="choleryk7" value="2"></div>
-                  <div class="labelki"><label for="flegmatyk7" id="flegmatyk7-label">Skrywający emocje głeboko</label>
-                  <input type="checkbox" id="flegmatyk7" value="3"></div>
+                  <div class="labels"><label for="sanguine7" id="sanguine7-label">Zmienność usposobienia</label>
+                  <input type="checkbox" id="sanguine7" value="0"></div>
+                  <div class="labels"><label for="melancholy7" id="melancholy7-label">Skłonny do poświęceń</label>
+                  <input type="checkbox" id="melancholy7" value="1"></div>
+                  <div class="labels"><label for="spitfire7" id="spitfire7-label">niezależny i samowystarczalny</label>
+                  <input type="checkbox" id="spitfire7" value="2"></div>
+                  <div class="labels"><label for="phlegmatic7" id="phlegmatic7-label">Skrywający emocje głeboko</label>
+                  <input type="checkbox" id="phlegmatic7" value="3"></div>
                 </div>
                 <div name="checkboxGroup">
-                  <div class="labelki"><label for="sangwinik8" id="sangwinik8-label">Szczerość serca jak dziecko</label>
-                  <input type="checkbox" id="sangwinik8" value="0"></div>
-                  <div class="labelki"><label for="melancholik8" id="melancholik8-label">Idealista</label>
-                  <input type="checkbox" id="melancholik8" value="1"></div>
-                  <div class="labelki"><label for="choleryk8" id="choleryk8-label">Wzbudzasz zaufanie</label>
-                  <input type="checkbox" id="choleryk8" value="2"></div>
-                  <div class="labelki"><label for="flegmatyk8" id="flegmaty8-label">Podzony z życiem</label>
-                  <input type="checkbox" id="flegmatyk8" value="3"></div>
+                  <div class="labels"><label for="sanguine8" id="sanguine8-label">Szczerość serca jak dziecko</label>
+                  <input type="checkbox" id="sanguine8" value="0"></div>
+                  <div class="labels"><label for="melancholy8" id="melancholy8-label">Idealista</label>
+                  <input type="checkbox" id="melancholy8" value="1"></div>
+                  <div class="labels"><label for="spitfire8" id="spitfire8-label">Wzbudzasz zaufanie</label>
+                  <input type="checkbox" id="spitfire8" value="2"></div>
+                  <div class="labels"><label for="phlegmatic8" id="flegmaty8-label">Podzony z życiem</label>
+                  <input type="checkbox" id="phlegmatic8" value="3"></div>
                 </div></div>
               </div>
             </div>
           </div>
-          <div class="naglowki">
+          <div class="headlines">
             <div>Tutaj możesz dopisać dodatkowe twoje cechy charakteru które mogą wpłynąć na ostateczny wynik testu.
               <div><textarea id="textarea" placeholder="Wpisz cechy charakteru po przecinku"></textarea></div>
             </div>

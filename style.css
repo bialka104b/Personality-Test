@@ -4,7 +4,7 @@ body {
   margin:0;
   background:linear-gradient(90deg, red, yellow, green, hsl(240, 100%, 62%));
 }
-.tlo {
+.background {
   margin:0 30px;
   padding:0;
 }
@@ -14,7 +14,7 @@ body {
 #description {
   font-size:25px;
 }
-.naglowki {
+.headlines {
   margin-top: 60px;
   font-size:30px;
 }
@@ -28,10 +28,10 @@ body {
   border: 2px solid black;
   border-radius: 6px;
 }
-.smallik{
+.tiny{
   font-size:20px;
 }
-.formularz {
+.form {
   font-family:'Lobster';
   font-size: 20px;
   height: 20px;
@@ -42,8 +42,8 @@ body {
   border-radius: 6px;
 }
 
-.labelki {
-  display:inline;
+.labels {
+  display:inline-block;
   border:2px solid black;
   width:20%;
   margin: 0 10px;
@@ -52,7 +52,7 @@ body {
   color:black;
   font-weight:900;
 }
-.cechy {
+.features {
   line-height: 4;
 }
 .small {
