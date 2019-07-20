@@ -43,11 +43,9 @@ body {
 }
 
 .labels {
-  display:inline-block;
+  display:inline;
   border:2px solid black;
-  width:20%;
   margin: 0 10px;
-  height:20px;
   padding:1%;
   color:black;
   font-weight:900;
